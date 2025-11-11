@@ -38,7 +38,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
     final String name = widget.productData['name'];
     final String description = widget.productData['description'];
     final String imageUrl = widget.productData['imageUrl'];
-    final double price = widget.productData['price'];
+    final double price = (widget.productData['price'] as num? ?? 0.0).toDouble();
 
     final cart = Provider.of<CartProvider>(context, listen: false);
 
