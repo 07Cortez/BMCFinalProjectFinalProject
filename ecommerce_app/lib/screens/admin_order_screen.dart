@@ -109,7 +109,7 @@ class _AdminOrderScreenState extends State<AdminOrderScreen> {
                   : 'No date';
 
               final String status = orderData['status'] ?? 'Unknown';
-              final double totalPrice = (orderData['totalPrice'] ?? 0.0) as double;
+              final double totalPrice = (orderData['totalPrice'] as num? ?? 0.0).toDouble();
               final String formattedTotal = 'P${totalPrice.toStringAsFixed(2)}';
               final String userId = orderData['userId'] ?? 'Unknown User';
 

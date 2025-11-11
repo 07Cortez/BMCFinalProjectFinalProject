@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ecommerce_app/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 
-
 class AdminChatListScreen extends StatelessWidget {
   const AdminChatListScreen({super.key});
 

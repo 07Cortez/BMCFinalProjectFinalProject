@@ -87,7 +87,6 @@ class _AdminPanelScreenState extends State<AdminPanelScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // 2. Your "Manage All Orders" button
               ElevatedButton.icon(
                 icon: const Icon(Icons.list_alt),
                 label: const Text('Manage All Orders'),
