@@ -18,6 +18,8 @@ class OrderCard extends StatelessWidget {
       formattedDate = 'Date not available';
     }
 
+    final double totalPrice = (orderData['totalPrice'] as num? ?? 0.0).toDouble();
+
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       elevation: 3,
@@ -25,7 +27,7 @@ class OrderCard extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: ListTile(
           title: Text(
-            'Total: P${(orderData['totalPrice'] as double).toStringAsFixed(2)}',
+            'Total: P${totalPrice.toStringAsFixed(2)}',
             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
           subtitle: Text(
