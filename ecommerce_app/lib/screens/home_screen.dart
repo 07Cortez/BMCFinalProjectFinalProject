@@ -144,7 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               return ProductCard(
                 productName: productData['name'],
-                price: productData['price'],
+                price: (productData['price'] as num? ?? 0.0).toDouble(),
                 imageUrl: productData['imageUrl'],
                 onTap: () {
                   Navigator.of(context).push(
